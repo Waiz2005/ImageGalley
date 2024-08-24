@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My Gallery</h1>
+  <div class="gallery-container">
+    <div class="gallery">
+      <img src="laptop-5673901_1280.jpg" alt="Gallery Image 1" class="active">
+      <img src="programming-2115930_1280.jpg" alt="Gallery Image 2">
+      <img src="teacup-2325722_1280.jpg" alt="Gallery Image 3">
+      <img src="avenue-5314089_1920.jpg" alt="Gallery Image 4">
+
+      
+    </div>
+    <button class="prev" onclick="prevImage()">&#10094;</button>
+    <button class="next" onclick="nextImage()">&#10095;</button>
+  </div>
+
+  <div class="thumbnails">
+    <img src="laptop-5673901_1280.jpg" onclick="selectImage(0)" alt="Thumbnail 1">
+    <img src="programming-2115930_1280.jpg" onclick="selectImage(1)" alt="Thumbnail 2">
+    <img src="teacup-2325722_1280.jpg" onclick="selectImage(2)" alt="Thumbnail 3">
+    <img src="avenue-5314089_1920.jpg" onclick="selectImage(3)" alt="Thumbnail 4">
+  </div>
+  <div class="footer">
+    <p>Developed by <span>Waiz Hashmi</span></p>
+  </div>
+  
+
+<script src="./script.js"></script>
+</body>
+</html>
